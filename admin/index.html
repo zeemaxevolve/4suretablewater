@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4Sure Table Water — Operations</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="logo">4S</span><div><b>4Sure</b><small>Table Water</small></div></div>
+    <nav id="nav">
+      <a href="#dashboard" data-view="dashboard">Dashboard</a>
+      <a href="#orders" data-view="orders">Orders</a>
+      <a href="#customers" data-view="customers">Customers</a>
+      <a href="#products" data-view="products">Products</a>
+    </nav>
+    <button class="btn ghost small reset" id="resetData">Reset demo data</button>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="menu" id="menuBtn" aria-label="Menu">☰</button>
+      <h1 id="title">Dashboard</h1>
+      <div class="top-actions" id="topActions"></div>
+    </header>
+    <main id="view"></main>
+  </div>
+</div>
+
+<div class="modal-wrap" id="modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head"><h2 id="modalTitle"></h2><button class="x" id="modalClose" aria-label="Close">×</button></div>
+    <form id="modalForm"><div id="modalBody"></div>
+      <div class="modal-foot"><button type="button" class="btn ghost" id="modalCancel">Cancel</button><button class="btn primary" type="submit">Save</button></div>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
